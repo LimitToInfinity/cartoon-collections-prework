@@ -4,7 +4,6 @@ end
 
 def summon_captain_planet(calls_array)
   calls_array.collect { |call| call.capitalize + "!" }
-  new_calls_array
 end
 
 =begin
