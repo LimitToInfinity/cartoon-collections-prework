@@ -19,7 +19,7 @@ def find_the_cheese(recipe_array)
     return "gouda"
   elsif recipe_array.include?("camembert")
     return "camembert"
-  else nil
+  else false
   end
 cheese_types = ["cheddar", "gouda", "camembert"]
 end
