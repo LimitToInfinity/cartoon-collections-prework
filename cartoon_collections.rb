@@ -2,19 +2,18 @@ def roll_call_dwarves(dwarf_array)
   dwarf_array.each_with_index { |name, index| puts "#{index + 1}. #{name}" } 
 end
 
-=begin
 def summon_captain_planet(calls_array)
-  new_calls_array = []
-  calls_array.collect { |call| new_calls_array << "#{call.capitalize}!" }
+  calls_array.collect { |call| call.capitalize + "!" }
   new_calls_array
 end
-=end
 
+=begin
 def summon_captain_planet(array)
   array.collect do |word| 
   word.capitalize + "!"
   end 
-end 
+end
+=end
 
 def long_planeteer_calls(array_of_calls)
   array_of_calls.any? { |word| word.length > 4 }
