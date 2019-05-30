@@ -13,13 +13,5 @@ def long_planeteer_calls(array_of_calls)
 end
 
 def find_the_cheese(recipe_array)
-  if recipe_array.include?("cheddar")
-    return "cheddar"
-  elsif recipe_array.include?("gouda")
-    return "gouda"
-  elsif recipe_array.include?("camembert")
-    return "camembert"
-  else recipe_array.find { |cheese| cheese == "cheddar" }
-  end
-cheese_types = ["cheddar", "gouda", "camembert"]
+  recipe_array.find { |cheese| cheese == "cheddar" || cheese == "gouda" || cheese == "camembert"
 end
